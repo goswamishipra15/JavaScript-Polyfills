@@ -1,9 +1,9 @@
 //Filter Polyfill 
 
-Array.prototype.myFilter = function(cb){
+Array.prototype.myFilter = function(callback){
     let temp = []
     for(let i=0;i<this.length;i++){
-        if(cb(this[i],i,this)){
+        if(callback(this[i],i,this)){
          temp.push(this[i])   
         }
     }
